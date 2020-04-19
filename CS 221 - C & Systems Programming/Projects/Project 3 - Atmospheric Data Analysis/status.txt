@@ -1,0 +1,1 @@
+Omar Hussain - Project 3 The program works as required. It compiles/runs and the output matches the correct format to the letter. The style and formatting is correct and I also included comments.
