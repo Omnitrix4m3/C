@@ -1,0 +1,4 @@
+Omar Hussain - Project 2
+The program works as required
+It compiles/runs and the output matches the correct format to the letter
+The style and formatting is correct with appropriate design choices and variable/method names and includes comments
