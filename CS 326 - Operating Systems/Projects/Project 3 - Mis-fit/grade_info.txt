@@ -1,0 +1,25 @@
+rm -rf tests
+cc -Wall -g -pthread -fPIC -shared  -DLOGGER=1 allocator.c -o allocator.so
+rm -rf tests
+git clone https://github.com/USF-OS/Memory-Allocator-Tests.git tests
+Building test programs
+make[1]: Entering directory '/repos/P3-mis-fit/tests/progs'
+cc -Wall -g -pthread -Wno-unused-variable  allocations-1.c -o allocations-1
+make[1]: Leaving directory '/repos/P3-mis-fit/tests/progs'
+Running Tests: (v9)
+ * 01 ls                   [1 pts]  [ FAIL ]
+ * 02 Free                 [1 pts]  [ SEGV ]
+ * 03 Basic First Fit      [1 pts]  [ FAIL ]
+ * 04 Basic Best Fit       [1 pts]  [ FAIL ]
+ * 05 Basic Worst Fit      [1 pts]  [ FAIL ]
+ * 06 First Fit            [1 pts]  [ FAIL ]
+ * 07 Best Fit             [1 pts]  [ FAIL ]
+ * 08 Worst Fit            [1 pts]  [ FAIL ]
+ * 09 Scribbling           [1 pts]  [ FAIL ]
+ * 10 Thread Safety        [1 pts]  [ FAIL ]
+ * 11 Unix Utilities       [1 pts]  [ FAIL ]
+ * 12 Static Analysis      [1 pts]  [ FAIL ]
+ * 13 Documentation        [1 pts]  [ FAIL ]
+Execution complete. [0/13 pts] (0.0%)
+
+View test output (enter number, q to quit, r to rerun): 
